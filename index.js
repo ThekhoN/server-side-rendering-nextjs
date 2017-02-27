@@ -5,7 +5,7 @@ import HeaderComponent from '../component/HeaderComponent'
 
 export default class extends Component {
   static async getInitialProps(){
-    const res = await axios.get('https://58b2874a78d2121200bfa8dd.mockapi.io/api/quotes')
+    const res = await axios.get('http://58b2874a78d2121200bfa8dd.mockapi.io/api/quotes')
     return {data: res.data}
   }
   render(){
